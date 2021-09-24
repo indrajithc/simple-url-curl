@@ -11,7 +11,9 @@ fi
 
 echo "url: $1"
 
-while :; do
+
+while :
+ do
     if test -n "$AUTH"; then
         curl -o /dev/null -s -w 'Total: %{time_total}s\n' -u "$AUTH" $1
     else

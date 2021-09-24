@@ -11,5 +11,5 @@ then
 fi
 
  for i in $(cat $1); do 
-    urxvt -e sh -c "./curl_url.sh  $i $USERNAME $PASSWORD" &
+    urxvt -e sh -c "./url_handler.sh  $i $USERNAME $PASSWORD" &
 done
